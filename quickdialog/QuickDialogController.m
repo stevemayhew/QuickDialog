@@ -126,6 +126,8 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    _viewOnScreen = YES;
+
 
     if (_root.showKeyboardOnAppear) {
         QEntryElement *elementToFocus = [_root findElementToFocusOnAfter:nil];
